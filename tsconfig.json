@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "types": ["cypress"],
-    "lib": ["es5", "dom", "dom", "dom.iterable", "esnext"],
+    "lib": ["es5", "dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
