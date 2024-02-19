@@ -1,6 +1,6 @@
 import "./style.scss";
 import React from "react";
-import { Chip, Stack, Typography } from "@mui/material";
+import { Chip, Stack, Typography, colors } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
 import { Link } from "react-router-dom";
 
@@ -61,8 +61,12 @@ const ArticleDetails = (props: ArticleDetailsProps) => {
             Content URL:
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            <Link to={url} target="_blank" color={"cadetblue"}>
-              {title}
+            <Link
+              to={url}
+              target="_blank"
+              style={{ color: colors.blueGrey[500], textDecoration: "none" }}
+            >
+              {`Visit: ${title}`}
             </Link>
           </Typography>
         </Stack>
