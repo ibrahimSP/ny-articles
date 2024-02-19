@@ -30,9 +30,14 @@ const ArticleCard = ({
   return (
     <Card className="article-card" sx={{ borderRadius: "8px" }}>
       <CardActionArea>
-        <Link to={`/${id}`} style={{ textDecoration: "none" }}>
+        <Link
+          className="card-link"
+          to={`/${id}`}
+          style={{ textDecoration: "none" }}
+        >
           <div className="card-content-wrapper">
             <CardMedia
+              className="card-media"
               sx={{ height: 200 }}
               image={mediaUrl || "/default.png"}
               title={title}
@@ -44,6 +49,7 @@ const ArticleCard = ({
                 gap={1}
               >
                 <Typography
+                  className="article-title"
                   gutterBottom
                   variant="h6"
                   component="div"
@@ -65,6 +71,7 @@ const ArticleCard = ({
                 <Chip label={section} color="info" sx={{ maxWidth: "80px" }} />
               </Stack>
               <Typography
+                className="article-abstract"
                 sx={{
                   height: "48px",
                   overflow: "hidden",
