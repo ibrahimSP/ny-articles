@@ -79,7 +79,7 @@ const ArticleDetailsPage = () => {
 
   return (
     <PageLayout>
-      <Link to="/">
+      <Link className="back-link" to="/">
         <IconButton sx={{ width: "fit-content", borderRadius: "8px", gap: 1 }}>
           <ArrowBack />
           <Typography variant="button">Back</Typography>

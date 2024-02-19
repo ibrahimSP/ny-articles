@@ -32,6 +32,7 @@ const ArticleDetails = (props: ArticleDetailsProps) => {
         <Stack>
           <Stack flexDirection={"row"} justifyContent={"space-between"} gap={2}>
             <Typography
+              className="article-title"
               gutterBottom
               variant="h6"
               component="div"
@@ -44,7 +45,12 @@ const ArticleDetails = (props: ArticleDetailsProps) => {
             <Chip label={section} color="info" sx={{ maxWidth: "80px" }} />
           </Stack>
           <Stack flexDirection={"row"} justifyContent={"space-between"} gap={2}>
-            <Typography gutterBottom variant="body1" color={blueGrey[400]}>
+            <Typography
+              className="article-byline"
+              gutterBottom
+              variant="body1"
+              color={blueGrey[400]}
+            >
               {byline}
             </Typography>
             <Typography gutterBottom variant="body1" color={blueGrey[400]}>
@@ -62,6 +68,7 @@ const ArticleDetails = (props: ArticleDetailsProps) => {
           </Typography>
           <Typography variant="body1" color="text.secondary">
             <Link
+              className="article-url"
               to={url}
               target="_blank"
               style={{ color: colors.blueGrey[500], textDecoration: "none" }}
